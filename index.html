@@ -1,85 +1,50 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
-
-  <title>ericduran/iknowwhatyousaid @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #7657fe;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #89a801; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #89a801; }
-    h3 { text-align: center; color: #89a801; }
-    a { color: #89a801; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Say Whaaaaat</title>
+  <meta name="author" content="Eric J. Duran">
+  <meta name="description" content="Demo for the x-webkit-attribute results">
+  <link rel="stylesheet" href="css/style.css?v=2">
 </head>
-
 <body>
-  <a href="https://github.com/ericduran/iknowwhatyousaid"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
   <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/ericduran/iknowwhatyousaid/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/ericduran/iknowwhatyousaid/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+    <header>
+      <h1>I know what you said</h1>
+      <span class="mini">(Setting the speech technology back 10 years)</span>
+    </header>
+    <div id="main" role="main">
+      <input id="speech" type="text" placeholder="Speak" required="required" x-webkit-speech="" />
+      <div id="msg">Dude, no typing</div>
+      <div class="social">
+        <div class="g-plusone" data-annotation="none" data-size="medium" data-href="ericduran.github.com/iknowwhatyousaid"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-via="ericjduran">Tweet</a>
+      </div>
     </div>
-
-    <h1><a href="https://github.com/ericduran/iknowwhatyousaid">iknowwhatyousaid</a>
-      <span class="small">by <a href="https://github.com/ericduran">ericduran</a></span></h1>
-
-    <div class="description">
-      Say whaaaaat
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-      <h2>Contact</h2>
-      <p>Eric J. Duran (eric.duran7@gmail.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/ericduran/iknowwhatyousaid/zipball/master">zip</a> or
-      <a href="https://github.com/ericduran/iknowwhatyousaid/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/ericduran/iknowwhatyousaid</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/ericduran/iknowwhatyousaid">ericduran/iknowwhatyousaid</a>
-    </div>
-
+    <div id="sucky-browser"><h3>Sorry, your browser doesn't support the x-webkit-speech attribute.</h3><img src="images/hornhead.png" alt="Funny image"/><h3>We can't hear you.</h3></div>
+    <div id="overlay"></div>
+    <a href="http://github.com/ericduran"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
   </div>
-
+  <script src="js/script.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    // Google+
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+    // Twitter
+    (function() {
+      var tw = document.createElement('script'); tw.type = 'text/javascript'; tw.async = true;
+      tw.src = 'http://platform.twitter.com/widgets.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tw, s);
+    })();
+    // Analytics
+    var _gaq=[['_setAccount','UA-26924734-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
 </body>
 </html>
